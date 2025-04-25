@@ -1,0 +1,172 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  
+  width: auto;
+  height: 40px;
+
+  padding: 10px 7%;
+  margin: 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+  background-color: rgb(244, 246, 255);
+}
+
+.left-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  
+  flex: 1;
+
+  z-index: 202;
+}
+
+.left-section img {
+  width: 38px;
+  max-width: 120px;
+
+  margin-right: 15px;
+
+  cursor: pointer;
+}
+
+.middle-section {
+  display: flex;
+  align-items: center;
+
+  font-size: 0.7em;
+  color: black;
+  margin-right: 15px;
+
+  flex: 1;
+}
+
+.middle-section img {
+  width: 40%;
+  max-width: 70px;
+  
+  margin-right: -5px;
+}
+
+.middle-section-options {
+  display: none;
+}
+
+.middle-section-options div {
+  cursor: pointer;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+
+  margin: 0px;
+  padding: 0px;
+  height: fit-content;
+
+  flex: 1;
+}
+
+.right-section img {
+  width: 35px;
+  max-width: 110px;
+
+  margin-right: 20px;
+
+  cursor: pointer;
+}
+
+.profile-icon {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  transform: translateX(-100%);
+  transition: transform 0.2s;
+  top: 39px;
+  left: 0;
+  right: 0px;
+  bottom: -20px;
+  z-index: 201;
+  background-color: rgb(16, 55, 92);
+  
+  list-style: none;
+
+  padding: 40px 20px;
+
+  text-align: center;
+}
+
+.menu li {
+  margin-bottom: 40px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.show-menu {
+  transform: translateY(0);
+}
+
+.close-icon {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    height: 70px;
+  }
+  
+  .profile-icon {
+    display: block;
+  }
+
+  .middle-section {
+    font-size: 1em;
+  }
+
+  .menu {
+    top: 70px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    height: 100px;
+  }
+  
+  .left-section {
+    display: none;
+  }
+
+  .middle-section {
+    flex: 4;
+    font-size: 1.5;
+  }
+
+  .middle-section-options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+
+    margin-left: 30px;
+  }
+
+  .middle-section-options div {
+    margin-left: 30px;
+    color: rgb(112, 112, 112);
+  }
+}

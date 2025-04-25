@@ -1,0 +1,43 @@
+body {
+  font-family: Roboto, Arial, sans-serif;
+  line-height: 1.8;
+  margin: 0px;
+  padding: 0px;
+
+  color: rgb(112, 112, 112);
+}
+
+.titles {
+  font-size: 1.7em;
+  font-family: "Rubik Bubbles", Arial, sans-serif;
+  color: rgb(235, 131, 23);
+  letter-spacing: 1px;
+  word-spacing: 10px;
+}
+
+.text {
+  font-size: 1em;
+}
+
+.buttons {
+  border: none;
+  border-radius: 70px;
+  
+  padding: 15px 20px;
+  width: fit-content;
+
+  background-color: rgb(16, 55, 92);
+  color: white;
+  font-size: 1.2em;
+  
+  cursor: pointer
+}
+
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+
+}
