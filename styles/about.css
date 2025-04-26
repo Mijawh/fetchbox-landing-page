@@ -38,14 +38,18 @@
 }
 
 .carousel-item {
-  height: 700px;
+  height: 800px;
   width: auto;
   max-width: 300px;
   
-  padding: 0;
+  padding: 0px 20px;
   word-wrap: wrap;
 
   display: none;
+
+  background: white;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
 }
 
 .carousel-item-title {
@@ -71,9 +75,10 @@
   height: 30px;
 
   padding: 10px 0px;
+  border-radius: 0px 0px 20px 20px;
   
   position: absolute;
-  bottom: -30px;
+  bottom: 0px;
 
   text-align: center;
   background-color: rgb(16, 55, 92);
@@ -103,6 +108,8 @@
 
   .carousel-item {
     display: block;
+    background: none;
+    box-shadow: 0px 0px 0px;
   }
 
   .carousel-nav {

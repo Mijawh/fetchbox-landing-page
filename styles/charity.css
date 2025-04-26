@@ -36,6 +36,15 @@
 
   justify-content: space-between;
   align-items: center;
+
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  border-radius: 20px;
+
+  width: fit-content;
+  max-width: 400px;
+  
+  padding: 0px 40px;
 }
 
 .charity-stat {
@@ -44,7 +53,7 @@
   justify-content: center;
   width: 100%;
 
-  margin-bottom: 70px;
+  margin: 70px 0px;
 }
 
 .stat {
@@ -59,7 +68,7 @@
   .charity-stats {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    max-width: 800px;
+    max-width: 1300px;
     grid-gap: 150px;
     justify-content: center;
   }

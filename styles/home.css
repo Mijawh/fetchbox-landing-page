@@ -49,6 +49,11 @@
   max-width: 400px;
 }
 
+.home-button-container {
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (min-width: 768px) {
   .home-content-container {
     flex-direction: row;
@@ -68,6 +73,8 @@
     width: auto;
     max-width: 400px;
     flex: 1;
+    
+    align-self: flex-start;
   }
 
   .home-text-container {

@@ -4,7 +4,7 @@
   <head>
 
     <link rel="icon" type="image/x-icon" href="/images/logo.png">
-    <title>Landing Page</title>
+    <title>Fetchbox Landing Page</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -25,16 +25,18 @@
     
     <!--JavaScript-->
     <script src="main.js" defer></script>
+    <script src="hamburger.js" defer></script>
   </head>
 
-  <body>
+  <body id="home">
 
     <!-- Nav Menu -->
     <ul class="menu">
-      <li><a class="menu-item" href="#">About</a></li>
-      <li><a class="menu-item" href="#">Themes</a></li>
-      <li><a class="menu-item" href="#">Charities</a></li>
-      <li><a class="menu-item" href="#">Testimonies</a></li>
+      <li><a class="menu-item" href="#home">Home</a></li>
+      <li><a class="menu-item" href="#about">About</a></li>
+      <li><a class="menu-item" href="#themes">Themes</a></li>
+      <li><a class="menu-item" href="#charities">Charities</a></li>
+      <li><a class="menu-item" href="#testimonies">Testimonies</a></li>
     </ul>
 
     <!-- Header -->
@@ -47,14 +49,20 @@
 
       <div class="middle-section">
         
-        <img class="header-logo" src="images/logo.png">
-        <div>fetchbox</div>
+        <div class="logo-container">
+          <a class="logo-link" href="#home">
+            <img class="header-logo" src="images/logo.png">
+          </a>
+          <a class="logo-text" href="#home">
+            fetchbox
+          </a>
+        </div>
         
         <div class="middle-section-options">
-          <div>How it works</div>
-          <div>Subscribe</div>
-          <div>Gift</div>
-          <div>fetchbox shop</div>
+          <a href="#about">About</a>
+          <a href="#themes">Themes</a>
+          <a href="#charities">Charities</a>
+          <a href="#testimonies">Testimonies</a>
         </div>
 
       </div>
@@ -71,7 +79,7 @@
     <div class="home">
 
       <div class="home-content-container">
-        <img src="images/dog.jpg">
+        <img src="images/dog.png">
 
         <div class="home-text-container">
           <div class="home-text-title titles">
@@ -84,14 +92,14 @@
         </div>
       </div>
       
-      <div class="home-button-container">
+      <a class="home-button-container" href="subscription.html">
         <button class="buttons">Subscribe Now</button>
-      </div>
+      </a>
 
     </div>
 
     <!-- About -->
-    <div class="about">
+    <div class="about" id="about">
 
       <div class="about-title titles">
         What's in it for your furry friend?
@@ -125,13 +133,13 @@
       </div>
 
       <div class="about-text text">Perfect as a gift!</div>
-      <button class="about-button buttons">Start a subscription</button>
+      <a class="about-button" href="subscription.html"><button class="buttons">Start a subscription</button></a>
       <div class="about-text text">No commitment, cancel anytime.</div>
 
     </div>
 
     <!-- Themes -->
-    <div class="themes-container">
+    <div class="themes-container" id="themes">
 
       <div class="themes-title titles">fetchbox themes</div>
 
@@ -171,7 +179,7 @@
     </div>
 
     <!-- Charity -->
-    <div class="charity-container">
+    <div class="charity-container" id="charities">
 
       <div class="charity-image-container">
         <img src="images/charity.png">
@@ -213,7 +221,7 @@
     </div>
 
     <!-- Testimonies -->
-    <div class="testimonies-container">
+    <div class="testimonies-container" id="testimonies">
 
       <div class="testimonies-title titles">If you needed any more of a reason...</div>
 
@@ -243,6 +251,7 @@
 
     </div>
 
+    <!-- Footer -->
     <div class="footer-container">
 
       <div class="footer-item-container">
@@ -266,7 +275,7 @@
         <div class="footer-header">Partner with us</div>
         <div class="footer-item">Wholesale</div>
         <div class="footer-item">Brands, manufacturers & distributors</div>
-        <div class="footer-item">Shleters & rescues</div>
+        <div class="footer-item">Shelters & rescues</div>
         <div class="footer-item">Refer a friend</div>
       </div>
 
